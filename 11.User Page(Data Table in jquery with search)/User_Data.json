@@ -1,0 +1,30 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "Username": "karthik",
+        "Email": "karthik@gmail.com",
+        "PhoneNO": "9700067660",
+        "Age": "23",
+        "Gender": "Male",
+        "Country": "India",
+        "State": "TS",
+        "City": "Hyd",
+        "PinCode": "500037 ",
+        "Password": "1234"
+      },
+      {
+        "Username": "yeswanth",
+        "Email": "yeswanth@gmail.com",
+        "PhoneNO": "960447489494",
+        "Age": "21",
+        "Gender": "Male",
+        "Country": "India",
+        "State": "TS",
+        "City": "Hyd",
+        "PinCode": "50039",
+        "Password": "1234",
+        "id": 2
+      }
+    ]
+  }

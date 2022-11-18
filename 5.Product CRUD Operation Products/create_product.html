@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function save(){
+        var pname=document.getElementById("pname").value;
+        var pcost=document.getElementById("pcost").value;
+        var pquan=document.getElementById("pquan").value;
+        var pcode=document.getElementById("pcode").value;
+        alert("Data Saved Successfully!!");
+
+        fetch("http://localhost:3000/product",{
+            method:"POST",
+            body:JSON.stringify({"Pname":pname,"Pcost":pcost,"Pquantity":pquan,"Pcode":pcode}),
+            headers:{
+                'Content-Type':'application/json'
+            }
+    }).then(Response => Response.json())
+    .then(Response => {console.log(Response)});
+}
+</script>
+
+<body>
+    <h2> ADD USER </h2>
+    <div>
+        Product-Name: <input type="text" id="pname"/> <br/> <br/>
+        Product-Cost: <input type="text" id="pcost"/> <br/> <br/>
+        Product-Quantity: <input type="text" id="pquan"/> <br/> <br/>
+        Product-Code`: <input type="text" id="pcode"/> <br/> <br/>
+        <input type="input" value="SAVE USER" onclick="save()"/>
+    </div>
+    
+</body>
+</html>

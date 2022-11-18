@@ -1,0 +1,25 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "Pname": "Macbook",
+        "Pcost": "100000",
+        "Pquantity": "5",
+        "Pcode": "654342"
+      },
+      {
+        "id": 2,
+        "Pname": "Android",
+        "Pcost": "10000",
+        "Pquantity": "10",
+        "Pcode": "54342"
+      },
+      {
+        "Pname": "Laptop",
+        "Pcost": "50000",
+        "Pquantity": "3",
+        "Pcode": "5569879",
+        "id": 3
+      }
+    ]
+  }

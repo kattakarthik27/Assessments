@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color </title>
+</head>
+<style>
+#color {
+  width: 900px;
+  height: 900px;
+  background-color: coral;
+  color: white;
+}
+</style>
+<body>
+
+    <p>Click the "Try it" button to set the backgroundColor property of the color element to "lightgreen":</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <div id="color">
+        <h1>Hello</h1>
+      </div>
+      
+      <script>
+      function myFunction() {
+        document.getElementById("color").style.backgroundColor = "lightgreen";
+      }
+      </script>
+</body>
+</html>
